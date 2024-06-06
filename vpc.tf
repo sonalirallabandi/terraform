@@ -5,8 +5,8 @@ resource "aws_vpc" "default" {
     Name        = "${var.vpc_name}"
     Owner       = "sonali"
     environment = "${var.environment}"
-    value      = var.star1
-    valu      = var.star2
+    value       = var.star1
+    valu        = var.star2
   }
 }
 

@@ -7,9 +7,9 @@ resource "aws_route_table" "terraform-public" {
   }
 
   tags = {
-    Name = "${var.Main_Routing_Table}"
-    value      = var.star1
-    valu      = var.star2
+    Name  = "${var.Main_Routing_Table}"
+    value = var.star1
+    valu  = var.star2
   }
 }
 
