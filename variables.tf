@@ -37,3 +37,4 @@ variable "instance_type" {
 }
 variable "star1" {}
 variable "star2" {}
+variable "vpc_id" {}
