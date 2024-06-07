@@ -8,6 +8,6 @@ resource "aws_dynamodb_table" "dynamodb-terraform-lock" {
     type = "S"
   }
   depends_on = [
-    "aws_s3_bucket.bucket",
+    "aws_s3_bucket.bucket"
   ]
 }
