@@ -7,4 +7,7 @@ resource "aws_dynamodb_table" "dynamodb-terraform-lock" {
     name = "LockID"
     type = "S"
   }
+  depends_on = [
+    "aws_s3_bucket.bucket",
+  ]
 }

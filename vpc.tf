@@ -8,6 +8,10 @@ resource "aws_vpc" "default" {
     value       = var.star1
     valu        = var.star2
   }
+  depends_on = [
+    "aws_dynamodb_table.dynamodb-terraform-lock"
+  ]
+
 }
 
 resource "aws_internet_gateway" "default" {
